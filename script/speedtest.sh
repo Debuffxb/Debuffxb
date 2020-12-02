@@ -6,6 +6,7 @@ echo "开始下载 speedtest"
 wget -q "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/bin/speedtest"
 mkdir '/usr/local/speedtest'
 mv speedtest '/usr/local/speedtest/'
+chmod +x '/usr/local/speedtest/speedtest'
 echo "添加 systemd 文件"
 echo '[Unit]
 Description=speedtest service
