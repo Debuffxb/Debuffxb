@@ -22,3 +22,16 @@ make install
 cd ../
 rm -r qBittorrent
 rm -r libtorrent
+echo '[Unit]
+Description=qBittorrent-nox
+After=network.target
+
+[Service]
+User=root
+Type=forking
+RemainAfterExit=yes
+LimitNOFILE=100000
+ExecStart=/usr/local/bin/qbittorrent-nox -d
+
+[Install]
+WantedBy=multi-user.target' > /etc/systemd/system/qbittorrent-nox.service
