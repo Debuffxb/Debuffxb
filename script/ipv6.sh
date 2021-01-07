@@ -9,7 +9,7 @@ echo -n 'interface:'
 read INTERFACE
 echo 'DUID:'$DUID
 echo 'address:'$ADDR
-echo 'prefixlength'$PREFIXLENGTH
+echo 'prefixlength:'$PREFIXLENGTH
 echo 'interface:'$INTERFACE
 echo 'Enter to continue, Ctrl+C to exit:'
 read
