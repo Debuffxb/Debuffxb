@@ -21,4 +21,7 @@ echo 'server {
   server_name _;
   return 444;
 }'>/usr/local/nginx/conf/vhost/default.conf
-service nginx restart
+sed -i "35,79d" /usr/local/nginx/conf/nginx.conf
+sed -i "71i include vhost/*.conf;" usr/local/nginx/conf/nginx.conf
+systemctl enbale nginx
+systemctl start nginx
