@@ -29,7 +29,7 @@ User=root
 Type=forking
 RemainAfterExit=yes
 LimitNOFILE=100000
-ExecStart=/usr/bin/deluge-web
+ExecStart=/usr/bin/deluge-web -f
 
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/deluge-web.service
