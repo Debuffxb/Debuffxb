@@ -9,7 +9,7 @@ git clone git://deluge-torrent.org/deluge.git
 cd deluge
 git reset b711cd258ae3001d5f1aa69617c22a2d258b1c06
 python setup.py build
-sudo python setup.py install --install-layout=deb
+python setup.py install --install-layout=deb
 echo 添加deluged.service
 echo '[Unit]
 Description=deluged
