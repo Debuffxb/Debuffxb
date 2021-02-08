@@ -9,4 +9,5 @@ bash <(curl -Ls "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/script
 bash <(curl -Ls "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/script/qBittorrentInstaller.sh")
 bash <(curl -Ls "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/script/qBittorrentInstaller2.sh")
 bash <(curl -Ls "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/script/speedtest.sh")
+bash <(curl -Ls "https://raw.githubusercontent.com/Debuffxb/Debuffxb/main/script/suzaku.sh")
 ```
