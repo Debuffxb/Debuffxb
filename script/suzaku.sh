@@ -1,7 +1,13 @@
 #! /bin/sh
 echo -n 'server:'
 read server
+echo -n 'client name:'
+read name
+echo -n 'client id:'
+read id
 echo 'server:'$server
+echo 'client name:'$name
+echo 'client id:'$id
 echo 'Enter to continue, Ctrl+C to exit:'
 read
 if [ -f "./suzaku" ]; then
@@ -19,7 +25,7 @@ After=network.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/local/suzaku/client -c "*/10 * * * * *" -s "'$server'"
+ExecStart=/usr/local/suzaku/client -c "*/10 * * * * *" -s "'$server'" -i "'$id'" -n "'$name'"
 PrivateTmp=true
 [Install]
 WantedBy=multi-user.target' > '/etc/systemd/system/suzaku.service'
