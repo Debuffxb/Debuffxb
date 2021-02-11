@@ -5,6 +5,8 @@ apt install -y git gcc
 apt install -y python python-twisted python-openssl python-setuptools intltool python-xdg python-chardet geoip-database python-libtorrent python-notify python-pygame python-glade2 librsvg2-common xdg-utils python-mako
 apt install -y python-pip  build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev python-dev
 pip install pillow
+apt install -y libboost-dev libboost-system-dev libboost-chrono-dev libboost-random-dev
+apt install -y libtool
 git clone https://github.com/arvidn/libtorrent.git
 cd libtorrent
 git checkout libtorrent-1_2_5
