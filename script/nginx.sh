@@ -1,5 +1,5 @@
 apt install sudo make -y
-sudo apt update && sudo apt install -y libssl-dev zlib1g zlib1g-dev libpcre3 libpcre3-dev
+sudo apt update && sudo apt install -y libssl-dev zlib1g zlib1g-dev libpcre3 libpcre3-dev gcc
 wget http://aventador.debuffxb.com/file/nginx-1.16.0.tar.gz
 tar -xzvf nginx-1.16.0.tar.gz
 cd nginx-1.16.0
