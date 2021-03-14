@@ -25,7 +25,7 @@ Wants=network-online.target
 Restart=always
 RestartSec=10
 Type=forking
-ExecStart=/sbin/dhclient -cf /etc/dhcp/dhclient6.conf -6 -P -v eno1
+ExecStart=/sbin/dhclient -cf /etc/dhcp/dhclient6.conf -6 -P -v '$INTERFACE'
 ExecStop=/sbin/dhclient -x -pf /var/run/dhclient6.pid
 
 [Install]
