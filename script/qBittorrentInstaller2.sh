@@ -12,7 +12,6 @@ make -j$(nproc)
 make install
 cd ../
 rm -r qBittorrent
-rm -r libtorrent
 echo '[Unit]
 Description=qBittorrent-nox
 After=network.target
